@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Roboto:wght@400;500&display=swap');
+   body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    
+}
+.wrapper {
+    height: 100vh;
+    overflow-y: a;
+    overflow-x: hidden;
+    perspective: 10px;
+    
+}
+
+header { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Orbitron',sans-serif;
+    color:white;
+    text-shadow: 0 0 5px black;
+    position: absolute;
+    top: 90px;
+}
+.background {
+    transform: translateZ(-20px) scale(4);
+
+}
+.foreground{
+    transform: translateZ(-10px) scale(2);
+}
+
+
+
+
+.background 
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.foreground {
+    position: absolute;
+    object-fit: fill;
+    z-index: -1;
+}
+
+
+.robot-left-hand {
+    position: absolute;
+    height: 350px;
+    right: 400px;
+    bottom: 0px;
+}
+.robot-right-hand {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+section{
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+}
+
