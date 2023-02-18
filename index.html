@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    <div>
+    <div class="first">
         <h1 class="title" id="title"> Artificial Intelligence </h1>
         <img class="collection" src="./pics/Free_Vector___Colored_artificial_intelligence_flowchart_composition_with_branches_and_pointers_on_blue_background-removebg-preview.png">
         <img class="holding-chip" id="holdingChip" src="./pics/holdingChip.png">
@@ -16,22 +16,49 @@
         <!-- <img class="build" id="build" src="./pics/build.png">
         <img class="build-robot" id="buildRobot" src="./pics/buildinRobot.png"> -->
     </div>
-    <div>Div2</div>
-    <div>Div3</div>
-    <div>Div4</div>
-    <div>Div5</div>
+    <div class="second">
+        <div class="history history1" id="his1">
+            <p id="line1" class="history-elements line1">All started when Alan Turing the father of modern computing laid the foundation for AI with his groundbreaking work on machine intelligence.</p>
+            <img id="img1" class="alan history-elements" src="./pics/alanTurning.jfif">
+        </div>
+        <div class="history history2" id="his2">
+            <p id="line2" class="history-elements line2">1997: IBM's Deep Blue defeats world chess champion Garry Kasparov, marking a significant milestone in the development of AI.</p>
+            <img id="img2" class="robot-chess history-elements" src="./pics/images.jfif">
+        </div>
+    </div>
+    <div class="third">Div3</div>
+    <div class="fourth">Div4</div>
+    <div class="fifth">Div5</div>
     <script>
+        const his1 = document.getElementById("his1");
+        const his2 = document.getElementById("his2");
         const holdingChip = document.getElementById("holdingChip");
         const robotsFinger = document.getElementById("robotsFinger");
         const build = document.getElementById("build");
         const title = document.getElementById("title");
         const buildRobot = document.getElementById("buildRobot");
+        let oneTime = false;
         window.onscroll = () => {
-            console.log(window.pageYOffset)
             holdingChip.style.transform = `translateY(${-window.pageYOffset}px)`;
             robotsFinger.style.transform = `translateY(${-window.pageYOffset}px)`;
             title.style.transform = `translateY(${-window.pageYOffset*0.4}px)`;
-            buildRobot.style.transform = `translateY(${-window.pageYOffset*0.5}px)`;
+            if( window.pageYOffset > 640 && !oneTime){
+                let num1 = 1;
+                let num2 = 49;
+                let num3 = 1;
+                oneTime = true
+                const inter = setInterval(() => {
+                    his1.style.transform = `translate(0, ${num1}vh)`;
+                    his2.style.transform = `translate(0, ${num2}vh)`;
+                    num1 += num3;
+                    num2 -= num3;
+                    setTimeout(()=> clearInterval(inter), 1200);
+                }, 25)
+            }
+            // else if(window.pageYOffset < 650){
+            //     his1.style.transform = `translate(0, 2vh)`;
+            //     his2.style.transform = `translate(0, 50vh)`;
+            // }
         }
     </script>
 </body>
