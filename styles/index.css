@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+div:first-child{
+    background-image: url("../pics/Polygon\ Luminary.svg");
+    background-size: cover;
+    z-index: -10;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.title{
+    z-index: -9;
+    position: fixed;
+    left: 35%;
+    font-size: 36px;
+    top: 80px;
+    color: white;
+    text-align: center;
+    font-family: 'Orbitron',cursive;
+}
+div:nth-child(2){
+    background-color: rgb(31, 37, 41);
+}
+.collection{
+    position: fixed;
+    z-index: 0;
+    transform: translate(380px, 80px);
+    width: 520px;
+}
+
+div:nth-child(3){
+    background-color: rgb(60, 117, 155);
+}
+div:nth-child(4){
+    background-color: rgb(39, 39, 39);
+}
+div:last-child{
+    background-color: rgb(215, 230, 19);
+}
+.holding-chip{
+    position: fixed;
+    z-index: 0;
+    height: 500px;
+    width: 500px;
+    right: 0px;
+    bottom: 0;
+}
+.build{
+    position: fixed;
+    z-index: 0;
+    height: 140px;
+    width: 140px;
+    right: 580px;
+    top: 20vh;
+}
+.build-robot{
+    position: fixed;
+    z-index: 0;
+    height: 100px;
+    width: 120px;
+    right: 230px;
+    top: 25vh;
+}
+.robot-finger{
+    position: fixed;
+    z-index: 0;
+    height: 320px;
+    width: 200px;
+    right: 400px;
+    bottom: 0;
+}

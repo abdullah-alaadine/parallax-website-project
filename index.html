@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div>
+        <h1 class="title" id="title"> Artificial Intelligence </h1>
+        <img class="collection" src="./pics/Free_Vector___Colored_artificial_intelligence_flowchart_composition_with_branches_and_pointers_on_blue_background-removebg-preview.png">
+        <img class="holding-chip" id="holdingChip" src="./pics/holdingChip.png">
+        <img class="robot-finger" id="robotsFinger" src="./pics/robotsFinger.png">
+        <!-- <img class="build" id="build" src="./pics/build.png">
+        <img class="build-robot" id="buildRobot" src="./pics/buildinRobot.png"> -->
+    </div>
+    <div>Div2</div>
+    <div>Div3</div>
+    <div>Div4</div>
+    <div>Div5</div>
+    <script>
+        const holdingChip = document.getElementById("holdingChip");
+        const robotsFinger = document.getElementById("robotsFinger");
+        const build = document.getElementById("build");
+        const title = document.getElementById("title");
+        const buildRobot = document.getElementById("buildRobot");
+        window.onscroll = () => {
+            console.log(window.pageYOffset)
+            holdingChip.style.transform = `translateY(${-window.pageYOffset}px)`;
+            robotsFinger.style.transform = `translateY(${-window.pageYOffset}px)`;
+            title.style.transform = `translateY(${-window.pageYOffset*0.4}px)`;
+            buildRobot.style.transform = `translateY(${-window.pageYOffset*0.5}px)`;
+        }
+    </script>
+</body>
+</html>
