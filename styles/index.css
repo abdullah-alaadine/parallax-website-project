@@ -231,3 +231,13 @@ div {
     position: absolute;
     z-index: -1;
 }
+.history-read-more{
+    display: block;
+    z-index: 1;
+    color: aqua;
+    width: 100px;
+    position: absolute;
+    font-size: large;
+    text-decoration: underline;
+    transform: translate(880px, 0px);
+}
