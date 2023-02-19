@@ -98,7 +98,7 @@ header {
   object-fit: fill;
   height: auto;
   z-index: -3;
-  transform: translateZ(-5px) scale(1.5);
+  transform: translateZ(-50px) scale(1.5);
   top: -3%;
 }
 
