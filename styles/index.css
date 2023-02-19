@@ -78,19 +78,23 @@ div {
     top: 25%;
     left: 43%;
 }
-.fourth{
+.fifth{
     background-image: url("../pics/future.webp");
     background-size: cover;
     transform: perspective(1000px) translateZ(0px);
     background-color: rgb(50, 117, 153);
     border: 1px rgb(117, 112, 136) solid;
 }
-.fifth{
+.fourth{
+    background-image: url("../pics/disease-management-min.jpg");
+    background-size: cover;
+    height: 130vh;
     background-color: rgb(59, 86, 100);
 }
 .sixth{
     background-image: url("../pics/robots\ king.jpg");
     background-size: cover;
+    background-attachment: fixed;
     border: 1px rgb(134, 114, 0) solid;
 }
 .holding-chip{
@@ -171,11 +175,12 @@ div {
     position: absolute;
     width: 1000px;
     z-index: -49;
-    top: 30%;
+    top: 5%;
 }
 .stars{
     position: absolute;
     width: 100%;
+    z-index: -1;
     height: 100vh;
 }
 .magnifier{
@@ -188,4 +193,41 @@ div {
     opacity: 0.1;
     right: 10px;
     height: 100%;
+}
+.future{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 85%;
+    background-color: transparent;
+    bottom: 60px;
+    border-radius: 5px;
+    left: 80px;
+    height: fit-content;
+    padding: 10px 0px;
+    color: rgb(152, 232, 243);
+    text-align: center;
+}
+.future p{
+    width: 20%;
+}
+.ethics-text{
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    color: white;
+    width: 30%;
+    right: 100px;
+}
+.ethics-definition{
+    width: 20%;
+    position: absolute;
+    left: 100px;
+    color: white;
+    bottom: 100px;
+    text-align: center;
+}
+.fifth-inner{
+    position: absolute;
+    z-index: -1;
 }

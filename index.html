@@ -28,14 +28,24 @@
     <div class="third" id="third">
         <img class="city" id="city" src="./pics/header-PhotoRoom.png-PhotoRoom.png  ">
         <img class="presenter" id="presenter" src="./pics/Apdata_Robot-removebg-preview.png">
-        <div id="thirdInner" class="third-inner">
+        <a href="" style="display: block;"></a><div id="thirdInner" class="third-inner">
             <p>From virtual assistants to self-driving cars, AI has revolutionized numerous industries and has become an indispensable tool for solving some of the world's most complex problems. With Github Copilot, AI is changing the way we write code and speeding up the development process. From Chess to Go, board games have long been a testing ground for AI, challenging machine learning algorithms to outsmart even the most skilled human players.</p>
-        </div>
+        </div></a>
     </div>
     <div class="fourth">
+        <div class="future">
+            <p> AI allows healthcare professionals to better understand the patterns and needs of their patients through in-depth data analysis. </p>
+            <p> With tech giants investing heavily in healthcare innovation, AI has <br> received a massive boost <br>in recent years. </p>
+        </div>
+    </div>
+
+    <div class="fifth">
+        <div class="fifth-inner">
+            <p class="ethics-text">The legal and ethical issues that confront society due to Artificial Intelligence (AI) include privacy and surveillance, bias or discrimination, and potentially the philosophical challenge is the role of human judgment</p>
+            <p class="ethics-definition">AI ethics is a set of guidelines that advise on the design and outcomes of artificial intelligence.</p>
+        </div>
         <div id="stars"><img class="stars" src="./pics/25039-5-star.png"></div>
     </div>
-    <div class="fifth">Div5</div>
     <div class="sixth">Div6</div>
     <script>
         const binary = document.getElementById("binary");
@@ -73,7 +83,7 @@
                     setTimeout(()=> clearInterval(inter), 1200);
                 }, 26)
             }
-            if(window.pageYOffset > 1050  && !oneTime2){
+            if(window.pageYOffset > 1150  && !oneTime2){
                 let one = 1, a = 1.1, b = 1, c = 180, d = 270;
                 const smallNum = 0.009;
                 let x = third.offsetWidth;
@@ -92,7 +102,7 @@
                     presenter.style.height = `${d + d*0.4/100}px`;
                     c += c*0.4/100;
                     d += d*0.4/100;
-                }, 15)
+                }, 20)
                 setTimeout(() => {
                     clearInterval(interval2);
                 }, 1000)
