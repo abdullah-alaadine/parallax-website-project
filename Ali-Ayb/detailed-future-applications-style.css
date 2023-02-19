@@ -19,7 +19,7 @@ body {
   perspective: 10px;
 }
 
-.detailed-history-title {
+.detailed-future-app-title {
   font-size: 2rem;
   font-family: "Orbitron", sans-serif;
   color: white;
@@ -42,11 +42,12 @@ body {
 .container3 {
   display: flex;
   justify-content: space-around;
-  margin-top: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.history-parag1,
-.history-parag2,
-.history-parag3 {
+.future-parag1,
+.future-parag2,
+.future-parag3 {
   display: inline-block;
   color: white;
   font-size: 24px;
@@ -57,18 +58,18 @@ body {
   padding: 20px;
 }
 
-.history-img1 {
+.future-img1 {
   width: 300px;
-  height: 300px;
+  height: 400px;
 }
 
-.history-img2 {
-  width: 300px;
-  height: 300px;
-  border-radius: 300px;
+.future-img2 {
+  width: 500px;
+  height: 400px;
+  /* border-radius: 300px; */
 }
 
-.history-img3 {
+.future-img3 {
   width: 300px;
   height: 300px;
   border-radius: 300px;
