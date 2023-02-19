@@ -15,8 +15,7 @@
         <img class="robot-finger" id="robotsFinger" src="./pics/robotsFinger.png">
     </div>
     <div class="second">
-        <img class="binary" src="./pics/85-854922_code-transparent-binary-picture-black-and-white-stock-removebg-preview (1).png">
-        <img class="magnifier" src="./pics/magnifieer-removebg-preview.png">
+        <img class="binary" id="binary" src="./pics/85-854922_code-transparent-binary-picture-black-and-white-stock-removebg-preview (1).png">
         <div class="history history1" id="his1">
             <p id="line1" class="history-elements line1">AI started when Alan Turing the father of modern computing laid the foundation for AI with his groundbreaking work on machine intelligence.</p>
             <img id="img1" class="alan history-elements" src="./pics/_82768025_tv012402748.jpg">
@@ -39,6 +38,7 @@
     <div class="fifth">Div5</div>
     <div class="sixth">Div6</div>
     <script>
+        const binary = document.getElementById("binary");
         const stars = document.getElementById("stars");
         const presenter = document.getElementById("presenter");
         const city = document.getElementById("city");
@@ -54,6 +54,7 @@
         let oneTime2 = false;
         const third = document.getElementById("third");
         window.addEventListener("scroll", () => {
+            binary.style.top = scrollY%100 + "px";
             stars.style.left = scrollY%100 + "px";
             holdingChip.style.transform = `translateY(${-window.pageYOffset}px)`;
             robotsFinger.style.transform = `translateY(${-window.pageYOffset}px)`;

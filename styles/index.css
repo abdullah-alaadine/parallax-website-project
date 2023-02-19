@@ -16,7 +16,6 @@ div {
     border: 0.5px rgb(61, 58, 58)  solid;
 }
 .first{
-    /* background-image: url("../pics/steampunk_computer_room___4k_ai_wallpaper_by_spiraloso_dfi9avh-pre.jpg"); */
     background-image: url("../pics/download.png");
     background-size: cover;
     z-index: -100;
@@ -34,7 +33,6 @@ div {
     font-family: 'Orbitron',cursive;
 }
 .second{
-    /* background-image: url("../pics/abstract-technology-ai-arm-digital-artificial-intelligence_36402-260.jpg"); */
     background-image: url("../pics/pure.avif"); 
     background-size: cover;
     height: 100vh;
@@ -81,12 +79,9 @@ div {
     left: 43%;
 }
 .fourth{
-    /* background-image: url("../pics/pexels-dylan-chan-4456051.jpg"); */
     background-image: url("../pics/future.webp");
-    /* background-image: url("../pics/AI-helps-cities-and-infrastructure-1024x539.jpg"); */
     background-size: cover;
     transform: perspective(1000px) translateZ(0px);
-    /* background-attachment: fixed; */
     background-color: rgb(50, 117, 153);
     border: 1px rgb(117, 112, 136) solid;
 }
@@ -190,7 +185,7 @@ div {
 .binary{
     position: absolute;
     width: 60%;
-    opacity: 0.3;
+    opacity: 0.1;
     right: 10px;
     height: 100%;
 }
