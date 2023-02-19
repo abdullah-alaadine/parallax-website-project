@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+.bold {
+  font-weight: bold;
+  background-color: green;
+  border-radius: 15%;
+  font-size: 2.5rem;
+}
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -4;
+}
+
+.detailed-history-title {
+  font-size: 2rem;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  margin-bottom: 1000px;
+  transform: translateZ(-10px) scale(2);
+}
+
+.background {
+  transform: translateZ(-20px) scale(4);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -4;
+}
