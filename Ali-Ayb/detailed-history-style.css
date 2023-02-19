@@ -19,22 +19,12 @@ body {
   perspective: 10px;
 }
 
-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transform-style: preserve-3d;
-  z-index: -4;
-}
-
 .detailed-history-title {
   font-size: 2rem;
   font-family: "Orbitron", sans-serif;
   color: white;
-  margin-bottom: 1000px;
   transform: translateZ(-10px) scale(2);
+  margin-left: 700px;
 }
 
 .background {
@@ -44,4 +34,23 @@ header {
   width: 100%;
   object-fit: cover;
   z-index: -4;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 300px;
+}
+.history-parag1 {
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 0px;
+  width: 700px;
+  margin-left: 50px;
+}
+
+.history-img1 {
+  width: 300px;
+  height: 300px;
 }
