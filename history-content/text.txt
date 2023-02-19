@@ -1,0 +1,5 @@
+history:
+
+All started when Alan Turing the father of modern computing laid the foundation for AI with his groundbreaking work on machine intelligence.
+
+1997: IBM's Deep Blue defeats world chess champion Garry Kasparov, marking a significant milestone in the development of AI.
