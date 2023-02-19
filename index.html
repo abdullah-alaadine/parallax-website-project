@@ -68,7 +68,7 @@
                     setTimeout(()=> clearInterval(inter), 1200);
                 }, 25)
             }
-            window.pageYOffset > 1000? city.style.display = 'block':null;
+            // window.pageYOffset > 1000? city.style.display = 'block':null;
             if(window.pageYOffset > 1050  && !oneTime2){
                 let one = 1, a = 1.1, b = 1, c = 180, d = 270;
                 const smallNum = 0.009;
@@ -80,8 +80,6 @@
                     console.log(x)
                     city.style.width = `${x - x*1/100}px`;
                     city.style.height = `${y - y*1/100}px`;
-                    // third.style.backgroundSize = `${x - x*1/100}px ${y - y*1/100}px`;
-                    // third.style.transform = "scale()";
                     x -= x*1/100;
                     y -= y*1/100;
                     city.style.transform = `translate(${a}px, ${a}px)`
