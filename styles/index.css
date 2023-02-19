@@ -38,6 +38,7 @@ div {
     height: 100vh;
     background-color: rgb(61, 92, 117);
     display: flex;
+    z-index: 2;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -47,7 +48,6 @@ div {
     transform: translate(300px, 80px);
     width: 520px;
 }
-
 .third{
     background-image: url("../pics/download.png");
     background-size: cover;
@@ -55,21 +55,21 @@ div {
     background-attachment: fixed;
     justify-content: space-between;
     align-items: center;
-    z-index: -60;   
 }
 .third-inner{
-    position: relative;
+    position: absolute;
     background-color: rgb(255, 250, 205);
     width: 20%;
     border: 0.7px rgb(129, 129, 1) solid;
     border-radius: 10px;
     left: 66%;
     height: 30%;
-    color: rgb(129, 129, 1);
+    color: rgb(172, 169, 4);
     padding: 6px;
     padding-top: 37px;
     text-align: center;
     top: 28%;
+    z-index: 2;
     font-size: 12px;
 }
 .presenter{
@@ -174,8 +174,8 @@ div {
 .city{
     position: absolute;
     width: 1000px;
-    z-index: -49;
-    top: 5%;
+    /* z-index: -49; */
+    top: 15%;
 }
 .stars{
     position: absolute;
@@ -225,11 +225,11 @@ div {
     left: 100px;
     color: white;
     bottom: 100px;
+    z-index: 1;
     text-align: center;
 }
 .fifth-inner{
     position: absolute;
-    z-index: -1;
 }
 .history-read-more{
     display: block;
