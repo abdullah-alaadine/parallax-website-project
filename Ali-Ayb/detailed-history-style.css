@@ -42,7 +42,8 @@ body {
   justify-content: space-around;
   margin-top: 200px;
 }
-.history-parag1 {
+.history-parag1,
+.history-parag2 {
   display: inline-block;
   color: white;
   font-size: 24px;
@@ -56,4 +57,10 @@ body {
 .history-img1 {
   width: 300px;
   height: 300px;
+}
+
+.history-img2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
 }
