@@ -31,7 +31,7 @@ body {
 .background {
   transform: translateZ(-30px) scale(5);
   position: absolute;
-  height: 100%;
+  height: 1000px;
   width: 100%;
   object-fit: cover;
   z-index: -4;
