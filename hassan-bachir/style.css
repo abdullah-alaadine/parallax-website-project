@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap'); 
-
 body {
     margin: 0;
     padding: 0;
-    background-color: #333;
-    
+    background-color: #333;   
 }
 .bold {
     font-weight: bold;
@@ -18,9 +16,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
-    
 }
-
 header { 
     position: relative;
     display: flex;
@@ -31,23 +27,17 @@ header {
     z-index: -4;
 }
 .history {
-
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    
     font-size: 2rem;
     /* background-color: #b62323; */
     color: white;
     z-index: -3;
     transform-style: preserve-3d;
     overflow: hidden;
-    
-    
-    
-
 }
 .history-background {
     position: absolute;
@@ -55,17 +45,10 @@ header {
     width: 100%;
     object-fit: cover;  
     z-index: -3;
-    
-    
 }
 .history-background{
     transform: translateZ(-20px) scale(4);
 }
-
-
-
-
-
 .title {
     font-size: 2rem;
     font-family: 'Orbitron',sans-serif;
@@ -82,8 +65,7 @@ header {
     color:white;
     text-shadow: 0 0 5px black;
     position: absolute;
-    top:-11%;
-    
+    top:-11%;   
 }
 .title3 {
     font-size: 2.5rem;
@@ -93,12 +75,9 @@ header {
     position: absolute;
     bottom:400px;
     right:240px;
-    
 }
-
 .background {
     transform: translateZ(-20px) scale(4);
-
 }
 .title2,
 .chatgpt-image,
@@ -106,8 +85,6 @@ header {
 .foreground{
     transform: translateZ(-10px) scale(2);
 }
-
-
 .turing1 {
     position: absolute;
     max-width: 300px;
@@ -148,7 +125,6 @@ header {
     top: 120px;
     left: 40px;
 }
-
 .robot-chess {
     position: absolute;
     max-width: 300px;

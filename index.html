@@ -31,10 +31,13 @@
             <p>From virtual assistants to self-driving cars, AI has revolutionized numerous industries and has become an indispensable tool for solving some of the world's most complex problems. With Github Copilot, AI is changing the way we write code and speeding up the development process. From Chess to Go, board games have long been a testing ground for AI, challenging machine learning algorithms to outsmart even the most skilled human players.</p>
         </div>
     </div>
-    <div class="fourth">Div4</div>
+    <div class="fourth">
+        <div id="stars"><img class="stars" src="./pics/25039-5-star.png"></div>
+    </div>
     <div class="fifth">Div5</div>
     <div class="sixth">Div6</div>
     <script>
+        const stars = document.getElementById("stars");
         const presenter = document.getElementById("presenter");
         const city = document.getElementById("city");
         const thirdInner = document.getElementById("thirdInner");
@@ -49,10 +52,11 @@
         let oneTime2 = false;
         const third = document.getElementById("third");
         window.addEventListener("scroll", () => {
+            stars.style.left = scrollY%100 + "px";
             holdingChip.style.transform = `translateY(${-window.pageYOffset}px)`;
             robotsFinger.style.transform = `translateY(${-window.pageYOffset}px)`;
             title.style.transform = `translateY(${-window.pageYOffset*0.4}px)`;
-            window.pageYOffset < 700 ? city.style.visibility = 'hidden': city.style.visibility = 'visible';
+            window.pageYOffset < 500 ? city.style.visibility = 'hidden': city.style.visibility = 'visible';
             if( window.pageYOffset > 640 && !oneTime){
                 let num1 = 1;
                 let num2 = 49;
@@ -64,9 +68,8 @@
                     num1 += num3;
                     num2 -= num3;
                     setTimeout(()=> clearInterval(inter), 1200);
-                }, 25)
+                }, 26)
             }
-            // window.pageYOffset > 1000? city.style.display = 'block':null;
             if(window.pageYOffset > 1050  && !oneTime2){
                 let one = 1, a = 1.1, b = 1, c = 180, d = 270;
                 const smallNum = 0.009;
@@ -79,7 +82,7 @@
                     city.style.height = `${y - y*1/100}px`;
                     x -= x*1/100;
                     y -= y*1/100;
-                    city.style.transform = `translate(${a}px, ${a}px)`
+                    city.style.transform = `translate(${a}px, ${b}px)`
                     a++;
                     b++;
                     presenter.style.width = `${c + c*0.4/100}px`;
