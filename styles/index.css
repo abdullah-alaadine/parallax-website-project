@@ -77,10 +77,16 @@ div {
     left: 43%;
 }
 .fourth{
-    background-color: rgb(27, 23, 23);
+    background-color: rgb(50, 117, 153);
+    border: 1px rgb(117, 112, 136) solid;
 }
 .fifth{
-    background-color: rgb(215, 230, 19);
+    background-color: rgb(59, 86, 100);
+}
+.sixth{
+    background-image: url("../pics/robots\ king.jpg");
+    background-size: cover;
+    border: 1px rgb(134, 114, 0) solid;
 }
 .holding-chip{
     position: fixed;

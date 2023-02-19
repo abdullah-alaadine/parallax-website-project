@@ -35,6 +35,7 @@
     </div>
     <div class="fourth">Div4</div>
     <div class="fifth">Div5</div>
+    <div class="sixth">Div6</div>
     <script>
         const presenter = document.getElementById("presenter");
         const city = document.getElementById("city");
@@ -68,7 +69,7 @@
                 }, 25)
             }
             window.pageYOffset > 1000? city.style.display = 'block':null;
-            if(window.pageYOffset > 1150  && !oneTime2){
+            if(window.pageYOffset > 1050  && !oneTime2){
                 let one = 1, a = 1.1, b = 1, c = 180, d = 270;
                 const smallNum = 0.009;
                 let x = third.offsetWidth;
