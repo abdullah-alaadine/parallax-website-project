@@ -18,7 +18,7 @@
     </div>
     <div class="second">
         <div class="history history1" id="his1">
-            <p id="line1" class="history-elements line1">All started when Alan Turing the father of modern computing laid the foundation for AI with his groundbreaking work on machine intelligence.</p>
+            <p id="line1" class="history-elements line1">AI started when Alan Turing the father of modern computing laid the foundation for AI with his groundbreaking work on machine intelligence.</p>
             <img id="img1" class="alan history-elements" src="./pics/alanTurning.jfif">
         </div>
         <div class="history history2" id="his2">
@@ -26,10 +26,15 @@
             <img id="img2" class="robot-chess history-elements" src="./pics/images.jfif">
         </div>
     </div>
-    <div class="third">Div3</div>
+    <div class="third">
+        <div id="thirdInner" class="third-inner">
+            <p>From virtual assistants to self-driving cars, AI has revolutionized numerous industries and has become an indispensable tool for solving some of the world's most complex problems. </p>
+        </div>
+    </div>
     <div class="fourth">Div4</div>
     <div class="fifth">Div5</div>
     <script>
+        const thirdInner = document.getElementById("thirdInner");
         const his1 = document.getElementById("his1");
         const his2 = document.getElementById("his2");
         const holdingChip = document.getElementById("holdingChip");
@@ -38,7 +43,8 @@
         const title = document.getElementById("title");
         const buildRobot = document.getElementById("buildRobot");
         let oneTime = false;
-        window.onscroll = () => {
+        let oneTime2 = false;
+        window.addEventListener("scroll", () => {
             holdingChip.style.transform = `translateY(${-window.pageYOffset}px)`;
             robotsFinger.style.transform = `translateY(${-window.pageYOffset}px)`;
             title.style.transform = `translateY(${-window.pageYOffset*0.4}px)`;
@@ -55,11 +61,21 @@
                     setTimeout(()=> clearInterval(inter), 1200);
                 }, 25)
             }
-            // else if(window.pageYOffset < 650){
-            //     his1.style.transform = `translate(0, 2vh)`;
-            //     his2.style.transform = `translate(0, 50vh)`;
-            // }
-        }
+            if(window.pageYOffset > 970  && !oneTime2){
+                let one = 1;
+                const smallNum = 0.01;
+                const interval2 = setInterval(() => {
+                    // thirdInner.style.width = `${thirdInner.offsetWidth + 1}px`;
+                    // thirdInner.style.height = `${thirdInner.offsetHeight + 1}px`;
+                    thirdInner.style.transform = `scale(${one})`;
+                    one += smallNum;
+                }, 5)
+                setTimeout(() => {
+                    clearInterval(interval2);
+                }, 500)
+                oneTime2 = true;
+            }            
+        })
     </script>
 </body>
 </html>
