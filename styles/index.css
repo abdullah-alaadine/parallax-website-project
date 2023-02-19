@@ -47,25 +47,34 @@ div {
 }
 
 .third{
-    background-image: url("../pics/header.jpg");
+    background-image: url("../pics/download.png");
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
+    z-index: -60;   
 }
 .third-inner{
     position: relative;
-    background-color: rgb(152, 253, 219);
-    width: 10%;
+    background-color: rgb(200, 253, 235);
+    width: 20%;
+    border: 0.7px rgb(129, 129, 1) solid;
     border-radius: 10px;
-    left: 67%;
+    left: 66%;
     height: 30%;
+    color: rgb(129, 129, 1);
     padding: 6px;
     padding-top: 37px;
     text-align: center;
     top: 28%;
     font-size: 12px;
+}
+.presenter{
+    position: absolute;
+    width: 180px;
+    top: 25%;
+    left: 43%;
 }
 .fourth{
     background-color: rgb(27, 23, 23);
@@ -147,4 +156,10 @@ div {
 .build{
     position: fixed;
     top: 50vh;
+}
+.city{
+    position: absolute;
+    width: 1000px;
+    z-index: -49;
+    top: 17%;
 }
