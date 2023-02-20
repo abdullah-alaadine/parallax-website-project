@@ -12,10 +12,10 @@
 - 📫 How to reach out to Hassan Bachir **hassan.bachir001@gmail.com**
 
 - 🌱 Date: 19-February-2023
-- 📝 References that I used to learn HTML/CSS:
+- 📝 References used in the project:
 
-- <ul><li><a href="https://www.youtube.com/watch?v=G-EGDH50hGE">YOUTUBE</a>
+- <ul><li><a href="https://youtu.be/mxHoPYFsTuk">Web Dev Simplified</a>
   </li>
-  <li><a href="https://www.freecodecamp.org/" >FreeCodeCamp</a></li>
-  <li><a href="https://www.w3schools.com/">W3schools</a></li>
+  <li><a href="https://youtu.be/Iy7oFI76FpE" >Abdelrahman Gamal</a></li>
+  <li><a href="https://youtu.be/JttTcnidSdQ">Traversy Media</a></li>
   </ul>
