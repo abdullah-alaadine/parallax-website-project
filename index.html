@@ -37,9 +37,9 @@
     <div class="fourth">
         <div class="future">
             <p> AI allows healthcare professionals to better understand the patterns and needs of their patients through in-depth data analysis. </p>
+            <p> <a style="color: aqua;" href="./pages/detailed-future-applications.html"> read more </a></p>
             <p> With tech giants investing heavily in healthcare innovation, AI has <br> received a massive boost <br>in recent years. </p>
         </div>
-        <p style="position: absolute; bottom: 4%; left: 47%;"> <a style="color: aqua;" href="./pages/detailed-future-applications.html"> read more </a></p>
     </div>
     <div class="fifth">
         <div class="fifth-inner">
@@ -48,70 +48,7 @@
         </div>
         <div id="stars"><img class="stars" src="./pics/25039-5-star.png"></div>
     </div>
-    <div class="sixth">Div6</div>
-    <script>
-        const binary = document.getElementById("binary");
-        const stars = document.getElementById("stars");
-        const presenter = document.getElementById("presenter");
-        const city = document.getElementById("city");
-        const thirdInner = document.getElementById("thirdInner");
-        const his1 = document.getElementById("his1");
-        const his2 = document.getElementById("his2");
-        const holdingChip = document.getElementById("holdingChip");
-        const robotsFinger = document.getElementById("robotsFinger");
-        const build = document.getElementById("build");
-        const title = document.getElementById("title");
-        const buildRobot = document.getElementById("buildRobot");
-        let oneTime = false;
-        let oneTime2 = false;
-        const third = document.getElementById("third");
-        window.addEventListener("scroll", () => {
-            binary.style.top = scrollY%100 + "px";
-            stars.style.left = scrollY%100 + "px";
-            holdingChip.style.transform = `translateY(${-window.pageYOffset}px)`;
-            robotsFinger.style.transform = `translateY(${-window.pageYOffset}px)`;
-            title.style.transform = `translateY(${-window.pageYOffset*0.4}px)`;
-            window.pageYOffset < 500 ? city.style.visibility = 'hidden': city.style.visibility = 'visible';
-            if( window.pageYOffset > 640 && !oneTime){
-                let num1 = 1;
-                let num2 = 49;
-                let num3 = 1;
-                oneTime = true
-                const inter = setInterval(() => {
-                    his1.style.transform = `translate(0, ${num1}vh)`;
-                    his2.style.transform = `translate(0, ${num2}vh)`;
-                    num1 += num3;
-                    num2 -= num3;
-                    setTimeout(()=> clearInterval(inter), 1200);
-                }, 26)
-            }
-            if(window.pageYOffset > 1150  && !oneTime2){
-                let one = 1, a = 1.1, b = 1, c = 180, d = 270;
-                const smallNum = 0.009;
-                let x = third.offsetWidth;
-                let y = third.offsetHeight;
-                const interval2 = setInterval(() => {
-                    thirdInner.style.transform = `scale(${one})`;
-                    one += smallNum;
-                    city.style.width = `${x - x*1/100}px`;
-                    city.style.height = `${y - y*1/100}px`;
-                    x -= x*1/100;
-                    y -= y*1/100;
-                    city.style.transform = `translate(${a}px, ${b}px)`
-                    a++;
-                    b++;
-                    presenter.style.width = `${c + c*0.4/100}px`;
-                    presenter.style.height = `${d + d*0.4/100}px`;
-                    c += c*0.4/100;
-                    d += d*0.4/100;
-                }, 20)
-                setTimeout(() => {
-                    clearInterval(interval2);
-                }, 1200)
-                city.style.position = "fixed";
-                oneTime2 = true;
-            }            
-        })
-    </script>
+    <div class="sixth"></div>
+    <script src="./js/index.js"></script>
 </body>
 </html>

@@ -75,7 +75,7 @@ div {
 .presenter{
     position: absolute;
     width: 180px;
-    top: 25%;
+    top: 32%;
     left: 43%;
 }
 .fifth{
@@ -88,7 +88,7 @@ div {
 .fourth{
     background-image: url("../pics/disease-management-min.jpg");
     background-size: cover;
-    height: 130vh;
+    height: 150vh;
     background-color: rgb(59, 86, 100);
 }
 .sixth{
@@ -173,8 +173,7 @@ div {
 }
 .city{
     position: absolute;
-    width: 1000px;
-    /* z-index: -49; */
+    width: 900px;
     top: 15%;
 }
 .stars{
@@ -197,12 +196,13 @@ div {
 .future{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     width: 85%;
     background-color: transparent;
-    bottom: 60px;
+    bottom: 100px;
     border-radius: 5px;
-    left: 80px;
+    left: 8%;
     height: fit-content;
     padding: 10px 0px;
     color: rgb(152, 232, 243);
